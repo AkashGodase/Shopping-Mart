@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            background-image: url(images/order1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid white;
+        }
+        
+        th,
+        td {
+            border: 1px solid white;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+            padding: 16px;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+        }
+        
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">Back</button>
+    
+    <h1>User Details</h1>
+    <table>
+        <tr>
+			<th>Id</th>
+            <th>User Name</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr th:each="user : ${userlist}">
+			<td th:text="${user.id}"></td>
+			<td th:text="${user.username}"></td>
+			<td th:text="${user.phoneNumber}"></td>
+			<td th:text="${user.address}"></td>
+			<td th:text="${user.state}"></td>
+			<td th:text="${user.email}"></td>
+			<td th:text="${user.password}"></td>
+		</tr>
+    </table>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

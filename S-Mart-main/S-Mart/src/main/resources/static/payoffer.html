@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shopping Payment Page</title>
+
+<style>
+     body{   background-image: url(images/payment2.avif);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+    
+    select {
+        padding: 6px 7px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+    }
+    option {
+        background-color: #f8f8f8;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    option:hover {
+        background-color: #e0e0e0;
+    }
+
+    option:checked {
+        background-color: #b8b8b8;
+        color: white;
+    }
+    
+
+.container {
+    width: 40%; 
+    margin: 0 auto;
+    padding: 10px; 
+
+    border-radius: 5px;
+
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="select"],
+button {
+    width: calc(100% - 22px);
+    padding: 8px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"] {
+    
+    
+    display: block;
+    margin: 0 auto 10px;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 23%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>OFFERS PAYMENT - ON S-MART</h2>
+    <div>
+        <label for="itemName" style="width: 10%;">Name :</label>
+        <input type="text" id="itemName" value="">
+    </div><br><div>
+        <label for="itemName" style="width: 10%;">Address :</label>
+        <input type="text" id="itemName" value="">
+    </div><br><div>
+        <label for="itemName" style="width: 10%;">Phone Number :</label>
+        <input type="text" id="itemName" value="">
+    </div><br><div>
+        <label for="itemName" style="width: 10%;">City :</label>
+        <input type="text" id="itemName" value="">
+    </div><br><div>
+       
+        <label for="country">State :</label><br>
+        <select id="country" name="country">
+            <option value="AP">Andhra Pradesh</option>
+<option value="AR">Arunachal Pradesh</option>
+<option value="AS">Assam</option>
+<option value="BR">Bihar</option>
+<option value="CT">Chhattisgarh</option>
+<option value="GA">Gujarat</option>
+<option value="HR">Haryana</option>
+<option value="HP">Himachal Pradesh</option>
+<option value="JK">Jammu and Kashmir</option>
+<option value="GA">Goa</option>
+<option value="JH">Jharkhand</option>
+<option value="KA">Karnataka</option>
+<option value="KL">Kerala</option>
+<option value="MP">Madhya Pradesh</option>
+<option value="MH">Maharashtra</option>
+<option value="MN">Manipur</option>
+<option value="ML">Meghalaya</option>
+<option value="MZ">Mizoram</option>
+<option value="NL">Nagaland</option>
+<option value="OR">Odisha</option>
+<option value="PB">Punjab</option>
+<option value="RJ">Rajasthan</option>
+<option value="SK">Sikkim</option>
+<option value="TN">Tamil Nadu</option>
+<option value="TG">Telangana</option>
+<option value="TR">Tripura</option>
+<option value="UT">Uttarakhand</option>
+<option value="UP">Uttar Pradesh</option>
+<option value="WB">West Bengal</option>
+<option value="AN">Andaman and Nicobar Islands</option>
+<option value="CH">Chandigarh</option>
+<option value="DN">Dadra and Nagar Haveli</option>
+<option value="DD">Daman and Diu</option>
+<option value="DL">Delhi</option>
+<option value="LD">Lakshadweep</option>
+<option value="PY">Puducherry</option>
+        </select><br><br>
+        <label for="itemName" style="width: 10%;">Zip-Code :</label>
+        <input type="text" id="itemName" value="">
+    </div><br>
+   
+   
+    <div>
+        <label for="itemName" style="width: 10%;">Item Name :</label>
+        <input type="text" id="itemName" value="">
+    </div><br>
+    <div>
+        <label for="price">Price:</label>
+        <input type="number" id="price" value="">
+    </div><br>
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1">
+    </div><br>
+    <div>
+        <label for="discount">Discount (%):</label>
+        <input type="number" id="discount" value="10">
+    </div><br>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+    
+    <div>
+        <label for="total">Total:</label>
+        <input type="number" id="total" value="">
+    </div><br>
+
+    <label for="paymentMethod">Payment Method</label><br><br>
+                <select id="paymentMethod" name="paymentMethod">
+                   
+                    <option value="googlePay">Google Pay</option>
+                   <a href="payoffer.html"> <option value="cashOnDelivery">Cash On Delivery</option></a>
+                    <option value="phonePay">Phone Pay</option>
+                    <a href="card.html"><option value="creditCard">Credit Card</option></select></a><br>
+                </select><br>
+                
+    
+                <a href="thankyou.html"><button type="button" class="login-button" onclick="myFunction('user')">Submit</button></a>
+
+</div><br>
+
+<script>
+    function calculateTotal() {
+        var price = parseInt(document.getElementById("price").value);
+        var quantity = parseInt(document.getElementById("quantity").value);
+        var discount = parseInt(document.getElementById("discount").value);
+        
+        if (isNaN(price) || isNaN(quantity) || isNaN(discount)) {
+            alert("Please enter valid numbers for price, quantity, and discount.");
+            return;
+        }
+        
+        var total = price * quantity;
+        var discountedTotal = total - (total * (discount / 100));
+        
+        document.getElementById("total").value = discountedTotal.toFixed(2);
+        document.getElementById("submitBtn").style.display = "block";
+    }
+
+    document.getElementById("paymentMethod").addEventListener("change", function() {
+                        var selectedPaymentMethod = this.value;
+                        if (selectedPaymentMethod === "creditCard") {
+                            window.location.href = "card.html";
+                        }
+                    });
+    
+</script>
+</body>
+</html>

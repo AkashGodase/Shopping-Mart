@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Changed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .success-message {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: block; 
+        }
+
+        .success-message h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .success-message p {
+            text-align: center;
+        }
+
+        .redirect-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redirect-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .redirect-button a:hover {
+            background-color: #0056b3;
+        }
+
+        body {
+            background-image: url(images/forgetpass.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message" id="success-message">
+        <h2></h2>
+        <p>User saved successfully!</p>
+        <div class="redirect-button">
+            <a href="userlogin.html">OK</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+  }body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: red;
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+  }
+  
+  nav ul li {
+    float: right;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+  
+    font-size: 18px;
+    padding-top: 25px;
+  }
+  
+  nav ul li a:hover {
+    color: #111;
+  }
+    
+    .logo{
+    height: 7%;
+    width: 7%;
+    margin-left: 6%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    }
+    .logo {
+     
+      margin-left: 6%;
+      }
+   .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    color:white;
+    }
+    .form-box {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 700px;
+        margin: 10px auto; 
+      
+    }
+    
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .radio-group {
+        margin: 8px 0;
+    }
+    
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    
+    button[type="submit"] {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60%;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: blue;
+        
+    }
+    .textup{
+        font-weight: bold;
+       color: red;
+    }
+    .pay{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        padding-top: 0%;
+        font-size: 250%;
+      }
+    
+      .sub button[type="submit"] {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60%;
+    }
+    
+    .sub button[type="submit"]:hover {
+        background-color: black;
+        
+    }
+    .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        position: fixed;
+        
+        
+      }
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+    
+      
+
+   
+    
+    
+    
+    
+    
+   

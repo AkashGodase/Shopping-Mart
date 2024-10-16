@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {   
+        background-image: url(images/login1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .login-container {
+        width: 300px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        
+    }
+
+    .login-container input[type="submit"] {
+        width: 100%;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+        background: #0056b3;
+    }
+
+    .forgot-password {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .forgot-password a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .sign-up {
+        text-align: center;
+    }
+
+    .sign-up a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .login-container img {
+        border-radius: 50%;
+        height: 50%;
+        width: 50%;
+        align-items: center;
+        padding-right: 1000px;
+        padding-left: 25%;
+    }
+
+    .login-button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+    }
+
+    .login-button:hover {
+        background-color:black; 
+    }
+    .bounce {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            border: 1px solid rgba(0, 0, 0, .15);
+            background-color: #ffffff;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+
+        .bounce p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            transform: translateX(50%);
+            animation: bouncing-text 10s ease-in-out infinite alternate;
+        }
+        
+
+        @keyframes bouncing-text {
+            0% {
+                transform: translateX(50%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+          
+</style>
+</head>
+<body>
+    <div class="bounce">
+        <p>S-MART</p>
+       
+    </div>
+    <div class="login-container">
+        <img src="image/login.png"><br>
+        <h2>Login</h2><br>
+        <a href="adminlogin.html"><button type="button" class="login-button" onclick="myFunction('admin')">Login With Admin</button></a><br>
+        <a href="userlogin.html"><button type="button" class="login-button" onclick="myFunction('user')">Login With User</button></a>
+    </div>
+
+    <script>
+        function myFunction(loginType) {
+            if (loginType === 'admin') {
+                alert("Login as Admin");
+            } else if (loginType === 'user') {
+                alert("Login as User");
+            }
+        }
+    </script>
+</body>
+</html>

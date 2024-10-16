@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body {
+		background-image: url(images/order1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		border: 1px solid white;
+	}
+
+	th,
+	td {
+		border: 1px solid white;
+
+		text-align: left;
+		color: white;
+		font-weight: bold;
+		padding: 16px;
+		text-align: center;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.back-button {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: black;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		text-decoration: none;
+		position: fixed;
+
+
+	}
+
+	.back-button:hover {
+		background-color: #0056b3;
+	}
+</style>
+
+<body>
+
+	<button class="back-button" onclick="goBack()">Back</button>
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+	<H1>ORDER DETAILS</H1>
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip-Code</th>
+			<th>ItemName</th>
+			<th>Amount</th>
+			<th>Quantity</th>
+			<th>Discount</th>
+			<th>Total</th>
+			<th>Payment Method</th>
+		</tr>
+		<tr th:each="order : ${orderlist}">
+			<td th:text="${order.id}"></td>
+			<td th:text="${order.name}"></td>
+			<td th:text="${order.address}"></td>
+			<td th:text="${order.phoneNumber}"></td>
+			<td th:text="${order.city}"></td>
+			<td th:text="${order.state}"></td>
+			<td th:text="${order.zipCode}"></td>
+			<td th:text="${order.itemName}"></td>
+			<td th:text="${order.price}"></td>
+			<td th:text="${order.quantity}"></td>
+			<td th:text="${order.discount}"></td>
+			<td th:text="${order.total}"></td>
+			<td th:text="${order.paymentMethod}"></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>

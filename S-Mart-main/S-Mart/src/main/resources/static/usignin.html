@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form</title>
+	<style>
+		body {
+			background-image: url(images/signin.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			font-family: Arial, sans-serif;
+
+		}
+
+		.login-container {
+			width: 320px;
+			margin: 0 auto;
+			background: #fff;
+			padding: 20px;
+			border-radius: 5px;
+
+			margin-left: 35%;
+			margin-top: 2%;
+		}
+
+		.login-container h2 {
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 30px;
+		}
+
+		.login-container input[type="text"],
+		.login-container input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			margin-right: 10px;
+			margin-left: 0;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+
+
+		}
+
+		.login-container .country [input] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			margin-right: 10px;
+			margin-left: 0;
+			border: 1px solid black;
+			border-radius: 3px;
+		}
+
+		.login-container input[type="submit"] {
+			width: 40%;
+			background: #007bff;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-left: 20px;
+		}
+
+
+		.login-container input[type="submit"]:hover {
+			background: #0056b3;
+		}
+
+		.forgot-password {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		.forgot-password a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.sign-up {
+			text-align: center;
+			width: 50%;
+		}
+
+		.sign-up a {
+			color: #007bff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.login-container img {
+			border-radius: 70%;
+			height: 70%;
+			width: 60%;
+			align-items: center;
+			padding-right: 1000px;
+			padding-left: 23%;
+		}
+
+		.login-button {
+			background-color: black;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			width: 50%;
+			font-size: 16px;
+			margin: 10px 0;
+			cursor: pointer;
+			border-radius: 5px;
+			transition-duration: 0.4s;
+		}
+
+		.login-button:hover {
+			background-color: black;
+		}
+
+		.bounce {
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+			border: 1px solid rgba(0, 0, 0, .15);
+			background-color: #ffffff;
+			height: 50px;
+			overflow: hidden;
+			position: relative;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			font-size: 40px;
+			font-weight: bold;
+
+
+		}
+
+		.bounce p {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			line-height: 50px;
+			text-align: center;
+			transform: translateX(50%);
+			animation: bouncing-text 10s ease-in-out infinite alternate;
+		}
+
+
+		@keyframes bouncing-text {
+			0% {
+				transform: translateX(50%);
+			}
+
+			100% {
+				transform: translateX(-50%);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bounce">
+		<p>S - MART</p>
+	</div>
+	<div class="login-container">
+		<img src="image/login.png"><br>
+		<h2>Sign In</h2><br>
+		<form action="/user-register" method="post" th:action="@{/saveUser}" th:object="${user}">
+			<label for="username">UserName :</label>
+			<input type="text" name="username" placeholder="Username" required>
+
+			<label for="phoneNumber">Phone Number :</label>
+			<input type="text" name="phoneNumber" placeholder="Phone Number" required>
+
+			<label for="address">Address :</label>
+			<input type="text" name="address" placeholder="Address" required>
+
+			<label class="country" for="country">State :</label><br>
+			<select id="country" name="state"><br>
+				<option value="AP">Andhra Pradesh</option>
+				<option value="AR">Arunachal Pradesh</option>
+				<option value="AS">Assam</option>
+				<option value="BR">Bihar</option>
+				<option value="CT">Chhattisgarh</option>
+				<option value="GA">Gujarat</option>
+				<option value="HR">Haryana</option>
+				<option value="HP">Himachal Pradesh</option>
+				<option value="JK">Jammu and Kashmir</option>
+				<option value="GA">Goa</option>
+				<option value="JH">Jharkhand</option>
+				<option value="KA">Karnataka</option>
+				<option value="KL">Kerala</option>
+				<option value="MP">Madhya Pradesh</option>
+				<option value="MH">Maharashtra</option>
+				<option value="MN">Manipur</option>
+				<option value="ML">Meghalaya</option>
+				<option value="MZ">Mizoram</option>
+				<option value="NL">Nagaland</option>
+				<option value="OR">Odisha</option>
+				<option value="PB">Punjab</option>
+				<option value="RJ">Rajasthan</option>
+				<option value="SK">Sikkim</option>
+				<option value="TN">Tamil Nadu</option>
+				<option value="TG">Telangana</option>
+				<option value="TR">Tripura</option>
+				<option value="UT">Uttarakhand</option>
+				<option value="UP">Uttar Pradesh</option>
+				<option value="WB">West Bengal</option>
+				<option value="AN">Andaman and Nicobar Islands</option>
+				<option value="CH">Chandigarh</option>
+				<option value="DN">Dadra and Nagar Haveli</option>
+				<option value="DD">Daman and Diu</option>
+				<option value="DL">Delhi</option>
+				<option value="LD">Lakshadweep</option>
+				<option value="PY">Puducherry</option>
+			</select><br><br>
+			 <label for="username">E-mail Id :</label><br>
+        <input type="text" name="email" placeholder="Email Id" required><br>
+
+        <label for="username">Password:</label><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+			<input type="submit" value="Submit">
+
+	</div>
+</body>
+
+</html>

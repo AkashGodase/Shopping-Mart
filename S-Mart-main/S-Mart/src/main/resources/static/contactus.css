@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+  }body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: red;
+    position: fixed;
+    width: 100%;
+  
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+  }
+  
+  nav ul li {
+    float: right;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    font-size: 19px;
+    padding-top: 25px;
+  }
+  
+  nav ul li a:hover {
+    color: #111;
+  }
+    
+    .logo{
+    height: 7%;
+    width: 7%;
+    margin-left: 6%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    }
+    .logo {
+     
+      margin-left: 6%;
+      }
+  
+     .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    color:white;
+    }
+  .main { 
+      text-align: center; 
+  } 
+  
+  .marq { 
+      padding-top: 5px; 
+      padding-bottom: 5px;
+       
+  } 
+  
+  .geek1 { 
+      font-size: 36px; 
+      font-weight: bold; 
+      color: red; 
+      padding-bottom: 10px; 
+  } 
+  .geek2 { 
+      font-size: 20px; 
+      font-weight: bold; 
+      color: wheat; 
+      padding-bottom: 15px; 
+      text-align: center;
+  
+  } 
+  
+    .product-container {
+        width: 360px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        float: left;
+      }
+    
+      .product-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    
+      .product-image {
+        width: 60%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .price {
+        margin: 0;
+        color: blak;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .discount {
+        color: red;
+        margin: 0;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+    
+      .add-to-cart-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+      }
+    
+      .add-to-cart-button:hover {
+        background-color: #45a049;
+      }
+      table {
+        width: 100%;
+        padding-top: 30px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-top: 30px;
+        overflow: hidden;
+      }
+      th {
+        background-color: #f2f2f2;
+        padding: 8px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+      }
+    
+      td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    
+      tr:hover {
+        background-color: #f2f2f2;
+      }
+      .back-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+          position: fixed;
+          
+        }
+        .back-button:hover {
+          background-color: #0056b3;
+        }
+
+        .add{
+            height: 5%;
+            width: 5%;
+            padding-top: 70%;
+            padding-bottom: 5px;
+            margin-top: 80%;
+            
+            }
+            .add {
+           
+                margin-left: 6%;
+                }
+            .add a{
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            color:white;
+            }
+          
+            about{
+                padding: 80px 0;
+                color: #ababab;
+            
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .about-col-1{
+                flex-basis: 35%;
+            }
+            .about-col-1 img{
+                width: 100%;
+                border-radius: 15px;
+            }
+            .about-col-2{
+                flex-basis: 60%;
+            
+            }
+            .sub-tital{
+                font-size: 60px;
+                font-weight: 600;
+                color: black;
+            
+            }
+
+            .back-button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: black;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                position: fixed;
+                
+                
+              }
+              .back-button:hover {
+                background-color: #0056b3;
+              }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+     
+    
+    
+    

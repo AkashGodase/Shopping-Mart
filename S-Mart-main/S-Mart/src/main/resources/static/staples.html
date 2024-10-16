@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="staples.css">
+</head>
+
+<body class="">
+    
+    <nav>
+        
+        <ul>
+            <button class="back-button" onclick="goBack()" >Back</button>
+    
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+            <img src="logo1.jpg" class="logo">
+           
+            <li><a href="personalcare.html">Personal Care</a></li>
+            <li><a href="homecare.html">Home Care</a></li>
+            <li><a href="dairy.html">Dairy & Bakery</a></li>
+            <li><a href="fruites.html">Fruites</a></li>
+            <li><a href="vegetable.html">Vegetables</a></li>
+            <li><a href="snacks.html">Snacks</a></li>
+            <li><a href="staples.html">Staples</a></li>
+           
+
+        </ul>
+    </nav>
+</header>
+    
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart - Staples</h1>
+            <div class="shopping">
+                <img src="icon.png">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+           <a href="payment.html"> <button class="checkoutButton" onclick="checkout()">Checkout</button></a>
+
+        </div>
+        
+    </div>
+    
+       
+    
+
+    <script src="staples.js"></script>
+</body>
+</html>
